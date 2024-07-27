@@ -1,3 +1,9 @@
+// for nav
+document.querySelector('.hamburger-menu').addEventListener('click', function() {
+	document.querySelector('.dropdown-menu').classList.toggle('show');
+});
+
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -22,9 +28,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 			}, { threshold: 0.1 }); // Adjust threshold as needed
 		
 			observer.observe(teamSection);
-		});
-		
-     
+		}); 
 
 document.getElementById('contact-us').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -38,7 +42,30 @@ document.getElementById('contact-us').addEventListener('submit', function(event)
     window.location.href = mailtoLink;
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Select all elements to be observed
+    const elementsToReveal = document.querySelectorAll('.one, .two, .three, .four, .five, .six, .seven');
 
+    // Create an intersection observer
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+				entry.target.classList.remove('hidden');
+                entry.target.classList.add('visible');
+            }
+			else {
+				entry.target.classList.remove('visible');
+                entry.target.classList.add('hidden');
+            }
+        });
+    }, { threshold: 0.1 }); // Adjust threshold as needed
+
+    // Observe each element
+    elementsToReveal.forEach(element => {
+        revealObserver.observe(element);
+    });
+});
+// for gallery
 const carousel = document.querySelector(".carousel");
 let carouselItems = document.querySelectorAll(".carousel__item");
 let carouselCount = carouselItems.length;
@@ -69,7 +96,7 @@ function slide(options) {
   return options.show;
 }
 
-// Function to move to the next slide
+
 function nextSlide() {
   let calculate = (pos + 1) % carouselCount;
   if (pos >= carouselCount - 1) {
