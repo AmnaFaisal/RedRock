@@ -210,10 +210,10 @@ header.hidden {
 
 
 .home {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding:60px 0px;
 }
 
 .home-content {
@@ -247,11 +247,6 @@ header.hidden {
     height: 24px;
 }
 
-.homescreen {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-}
 @media (max-width:685px){
     .services-screen{
         display:none;
@@ -352,11 +347,11 @@ header.hidden {
         padding:10px 20px;
     }
     .services-screen {
-        padding: 20px;
+        padding: 120px 20px;
         text-align: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 100vh;
+        
         overflow: hidden;
         display: flex;
         justify-content: center;
@@ -532,7 +527,7 @@ header.hidden {
 .team{
     font-weight: 300;
     font-size: 2rem;
-    color: #b2d8d8;     
+    color: #b2d8d8;   
 }
 .gallery-heading{
     font-weight: 300;
@@ -552,7 +547,6 @@ header.hidden {
 .mission-screen {
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
     overflow: hidden;
     display: flex;
 }
@@ -577,6 +571,7 @@ header.hidden {
     .mission-text{
         max-width: 400px;
     }
+    
 }
 @media (min-width:741px){
     .mission-screen{
@@ -742,25 +737,20 @@ header.hidden {
         display: flex;
         padding:80px 20px;
         height: 100vh;
-
-        
     }
     
     .contact-screen{
-        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        
+        padding-bottom:150px;
     }
       
       .content {
         display:flex;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        align-items: center;
+        justify-content: center;
         height: 80px;
         overflow: hidden;
 
@@ -847,7 +837,7 @@ header.hidden {
    
 
 .gallery-screen{
-    height: 100vh;
+    padding: 60px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -952,7 +942,6 @@ header.hidden {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     margin: 0;
     position: relative;
 }
@@ -995,8 +984,15 @@ header.hidden {
         align-items: center;
         gap:24px; 
     }
+    .about-screen{
+        padding-bottom:50px;
+    }
 }
+
 @media (min-width:851px){
+    .home{
+        height:100vh;
+    }
     .text-box{
         width:50%;
     }
@@ -1007,4 +1003,8 @@ header.hidden {
     .swatch{
         margin-right:400px;
     }
+    .about-screen{
+        padding-bottom:150px;
+    }
+
 }
