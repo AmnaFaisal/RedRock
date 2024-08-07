@@ -41,6 +41,7 @@ document.getElementById('contact-us').addEventListener('submit', function(event)
 
     window.location.href = mailtoLink;
 });
+// for services
 
 document.addEventListener('DOMContentLoaded', function() {
     // Select all elements to be observed
