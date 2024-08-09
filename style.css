@@ -376,6 +376,7 @@ header.hidden {
             font-size: 14px; 
             color:#b8ffff; 
             padding-top:8px;
+            text-align: left;
         }
     }
   }
