@@ -233,7 +233,8 @@ header.hidden {
 .team{
     font-weight: 300;
     font-size: 2rem;
-    color: #b2d8d8;   
+    color: #b2d8d8;
+    padding-bottom: 32px;
 }
 
 .inputarea{
@@ -406,27 +407,27 @@ header.hidden {
         }
         div:nth-child(1) {
             background-color: #013232;
-            --start-rotation: -135deg;
+            --start-rotation: -53deg;
           }
           div:nth-child(2) {
             background-color:#035b5b;
-            --start-rotation: -45deg;
+            --start-rotation: -30deg;
           }
           div:nth-child(3) {
             background-color: #014a4a;
-            --start-rotation: -20deg;
+            --start-rotation: -9deg;
           }
           div:nth-child(4) {
             background-color:#007575;
-            --start-rotation: 20deg;
+            --start-rotation: 14deg;
           }
           div:nth-child(5) {
             background-color: #008080;
-            --start-rotation: 45deg;
+            --start-rotation: 35deg;
           }
           div:nth-child(6) {
             background-color: #022727;
-            --start-rotation: 135deg;
+            --start-rotation: 61deg;
           }
     }
   }
@@ -551,6 +552,7 @@ header.hidden {
     margin: 0;
     position: relative;
     padding-top:30px;
+    background-color: #000;
 }
 .text-box{
     background-image: url('images/logo-no-text.png');
