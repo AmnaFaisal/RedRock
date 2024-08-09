@@ -552,10 +552,9 @@ header.hidden {
     margin: 0;
     position: relative;
     padding-top:30px;
-    background-color: #000;
 }
-.text-box{
-    background-image: url('images/logo-no-text.png');
+.text-box{}
+    /*background-image: url('images/logo-no-text.png');
     background-repeat: no-repeat;
     padding: 20px 30px;
     text-align: left;
@@ -565,7 +564,7 @@ header.hidden {
     border-radius: 10px; 
     background-size: cover;
     background-position: center;
-    z-index: 1; /* Ensure the text content is above the pseudo-element */
+    z-index: 1; 
     background-color: rgba(255, 255, 255, 0.4);
 }
 .text-box::before {
@@ -582,7 +581,7 @@ header.hidden {
     filter: blur(10px);
     border-radius: 10px; 
     z-index: -1; 
-}
+}*/
 
       @media (max-width: 1024px) {
         .left-nav {
